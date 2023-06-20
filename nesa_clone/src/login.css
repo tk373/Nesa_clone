@@ -1,20 +1,233 @@
 .app {
-    display: block;
-    flex-direction: column;
-    min-height: 100vh;
-    width: 100%;
+    display: table;
     height: 100%;
+    margin: 0 auto;
+  }
+
+  form {
+    display: block;
+    margin-top: 0em;
+  }
+
+  .usernameField{
+    width: calc(50% - 16px);
+    margin: 8px;
+    box-sizing: border-box;
+  }
+
+  .passwordField{
+    width: calc(50% - 16px);
+    margin: 8px;
+    box-sizing: border-box;
+  }
+
+  .usernameInputField{
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,.12);
+    display: block;
+    font-size: 16px;
+    font-family: "Helvetica","Arial",sans-serif;
+    margin: 0;
+    padding: 4px 0;
+    width: 100%;
+    background: 0 0;
+    text-align: left;
+    color: inherit;
+    border-bottom: 1px solid white;
+  }
+
+  .forgotPassword{
+    height: 32px;
+    padding: 0 12px;
+    font-size: 12px;
+    line-height: 32px;
+    margin-right: 10px;
+    color: white !important;
+    background: 0 0;
+    border: none;
+    border-radius: 2px;
+    position: relative;
+    margin: 0;
+    min-width: 64px;
+    display: inline-block;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-weight: 501;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    letter-spacing: 0;
     overflow: hidden;
+    will-change: box-shadow;
+    transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    float: right;
+  }
+
+  .submitButton{
+    background: #2971ad;
+    height: 32px;
+    padding: 0 12px;
+    font-size: 12px;
+    line-height: 32px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+    border: none;
+    border-radius: 2px;
+    position: relative;
+    margin: 0;
+    min-width: 64px;
+    display: inline-block;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-weight: 505;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    overflow: hidden;
+    will-change: box-shadow;
+    transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+    align-items: flex-start;
+    box-sizing: border-box;
+    float: right;
+    color: white;
+    margin-right: 10px;
+  }
+
+  .usernameInptLabel{
+    bottom: 0;
+    color: rgba(0,0,0,.26);
+    font-size: 12px;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    position: absolute; 
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: left;
+    transition-duration: .2s;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    color: white !important;
+    font-size: 12px;
+    top: 4px;
+    visibility: visible;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+
+  label{
+    cursor: default;
+  }
+
+  .usernameInput{
+    position: relative;
+    font-size: 16px;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 300px;
+    max-width: 100%;
+    margin: 0;
+    padding: 20px 0;
+    padding-bottom: 2px;
+  }
+
+  .passrdInptLabel{
+    bottom: 0;
+    color: rgba(0,0,0,.26);
+    font-size: 16px;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    position: absolute; 
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: left;
+    transition-duration: .2s;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    color: white !important;
+    font-size: 12px;
+    top: 4px;
+    visibility: visible;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+
+  .passwrdInputField{
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,.12);
+    display: block;
+    font-size: 16px;
+    font-family: "Helvetica","Arial",sans-serif;
+    margin: 0;
+    padding: 4px 0;
+    width: 100%;
+    background: 0 0;
+    text-align: left;
+    color: inherit;
+    border-bottom: 1px solid white;
+  }
+
+  .passwordInput{
+    position: relative;
+    font-size: 16px;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 300px;
+    max-width: 100%;
+    margin: 0;
+    padding: 20px 0;
+    padding-bottom: 2px;
+  }
+  
+  .ButtonField{
+    width: calc(100% - 16px);
+    margin: 8px;
+    box-sizing: border-box;
+  }
+
+  .loginGrid{
+    max-height: calc(100vh - 100px);
+    overflow: auto;
+    padding: 8px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+  }
+
+  .loginform{
+    width: 400px;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 2px;
   }
 
   body{
     height: 100%;
+    width: 100%;
     overflow: hidden;
     margin: 0;
     background-image: url('https://root.nesa-sg.ch/_schulnetz_5.7.1/css/flat/background/NewtonsCradle.jpeg');
     background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    line-height: 20px;
+    font-family: 'Roboto', "Segoe UI", Arial, sans-serif;
   }
 
   .DatetimeFooter{
@@ -56,6 +269,7 @@ background-position: center;
   }
 
   #root{
+    height: 100%;
     width: 100%;
     padding: 0;
     margin: 0;
@@ -63,9 +277,8 @@ background-position: center;
   }
  
   .content {
-    padding-bottom: 50px;
-    min-height: 500px;
-    /* Add your login form styles here */
+    display: table-cell;
+    vertical-align: middle;
   }
   
   .footer {

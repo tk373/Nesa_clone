@@ -46,6 +46,28 @@ const Login = () => {
         </div> 
       </header>
       <div className="content">
+        <div className='loginform'>
+          <form>
+            <div className='loginGrid'>
+              <div className='usernameField'>
+                <div className='usernameInput'>
+                  <input type='text' id='user' className='usernameInputField'></input>
+                  <label htmlFor='user' className='usernameInptLabel'>Benutzername</label>
+                </div>
+              </div>
+              <div className='passwordField'>
+                <div className='passwordInput'>
+                  <input id='password' name='password' type='password' className='passwrdInputField'></input>
+                  <label htmlFor='password' className='passrdInptLabel'>Passwort</label>
+                </div>
+              </div>
+              <div className='ButtonField'>
+                <input type='submit' value="Login" className='submitButton'></input>
+                <a href='https://www.google.com' className='forgotPassword'>Passwort vergessen?</a>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
       <footer className="footer">
        <div className='DatetimeFooter'>{currentDateTime}</div>
