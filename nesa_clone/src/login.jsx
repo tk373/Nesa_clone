@@ -1,9 +1,16 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { auth } from "./fire" 
+import { GoogleAuthProvider, signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
 import './login.css';
 
 const Login = () => {
 
+  const navigate = useNavigate();
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
   const [currentDateTime, setCurrentDateTime] = useState('');
+  const [loggedIn, setLoggedIn] = useState(false);
 
   useEffect(() => {
     document.title = "Nesa BWZR"; // Replace with your desired title
@@ -31,6 +38,20 @@ const Login = () => {
     dialog.close();
   }
 
+  function handleLogin() {
+    signInWithEmailAndPassword(auth, username, password)
+    .then((userCredential) => {
+      const user = userCredential.user;
+      navigate("/Home")
+      // ...
+    })
+    .catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      console.log(errorMessage);
+    });
+  };
+
   return (
     <div className="app">
       <header className="header">
@@ -51,18 +72,18 @@ const Login = () => {
             <div className='loginGrid'>
               <div className='usernameField'>
                 <div className='usernameInput'>
-                  <input type='text' id='user' className='usernameInputField'></input>
+                  <input type='text' id='user' value={username} onChange={(e) => setUsername(e.target.value)} className='usernameInputField'></input>
                   <label htmlFor='user' className='usernameInptLabel'>Benutzername</label>
                 </div>
               </div>
               <div className='passwordField'>
                 <div className='passwordInput'>
-                  <input id='password' name='password' type='password' className='passwrdInputField'></input>
+                  <input id='password' name='password' type='password' value={password} onChange={(e) => setPassword(e.target.value)} className='passwrdInputField'></input>
                   <label htmlFor='password' className='passrdInptLabel'>Passwort</label>
                 </div>
               </div>
               <div className='ButtonField'>
-                <input type='submit' value="Login" className='submitButton'></input>
+                <button className='submitButton' type="button" onClick={handleLogin}>Login</button>
                 <a href='https://www.google.com' className='forgotPassword'>Passwort vergessen?</a>
               </div>
             </div>

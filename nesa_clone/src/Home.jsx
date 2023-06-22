@@ -2,22 +2,20 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import Login from './login'
-import Home from './Home'
 import './App.css'
 import {BrowserRouter, Routes, Route, useNavigate, Navigate, useAsyncError} from 'react-router-dom'
 
-function App() {
-
+function Home() {
+    
   return (
     <>
-      <BrowserRouter> 
-        <Routes>  
-              <Route path='/Home' element={<Home />}/>
-              <Route path="/Login" element={<Login/>}/>
-        </Routes>
-      </BrowserRouter>
+      <div>
+        <b>
+            LOL
+        </b>
+      </div>
     </>
   )
 }
 
-export default App
+export default Home
