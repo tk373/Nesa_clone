@@ -1,0 +1,580 @@
+.body-home{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    background-color: white;
+    background-size: cover;
+    position: absolute;
+    line-height: 20px;
+    font-family: 'Roboto', "Segoe UI", Arial, sans-serif;
+  }
+
+  .appHome {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+  }
+
+  .homeHeader{
+    flex-shrink: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    -webkit-flex-shrink: 0;
+    min-height: 60px;
+    max-height: 60px;
+    height: 60px;
+    background-color: #2971ad;
+    color: #fff;
+  }
+
+  .layoutHeader{
+    min-height: 60px;
+    max-height: 60px;
+    height: 60px;
+    padding-left: 0;
+    padding-right: 10px;
+    padding-top: 0;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    -webkit-align-self: stretch;
+    -ms-flex-item-align: stretch;
+    align-self: stretch;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 64px;
+    margin: 0;
+  }
+
+  .headerLogoSpan{
+    background-color: rgb(238, 238, 238);
+    box-sizing: content-box;
+    color: rgb(255, 255, 255);
+    cursor: default;
+    display: block;
+    flex-shrink: 0;
+    font-family: Roboto, "Segoe UI", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    height: 60px;
+    line-height: 14px;
+    width: 90px;
+  }
+
+  .buttonMenu{
+    align-items: flex-start;
+    appearance: auto;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgb(41, 113, 173);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-style: none;
+    border-bottom-width: 0px;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+    border-left-color: rgb(41, 113, 173);
+    border-left-style: none;
+    border-left-width: 0px;
+    border-right-color: rgb(41, 113, 173);
+    border-right-style: none;
+    border-right-width: 0px;
+    border-top-color: rgb(41, 113, 173);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-top-style: none;
+    border-top-width: 0px;
+    box-sizing: content-box;
+    color: rgb(41, 113, 173);
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-feature-settings: normal;
+    font-kerning: auto;
+    font-optical-sizing: auto;
+    font-size: 24px;
+    font-size-adjust: none;
+    font-stretch: 100%;
+    font-style: normal;
+    font-variant-alternates: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-variant-position: normal;
+    font-variation-settings: normal;
+    font-weight: 500;
+    height: 45px;
+    letter-spacing: normal;
+    line-height: normal;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    min-width: 32px;
+    outline-color: rgb(41, 113, 173);
+    outline-style: none;
+    outline-width: 0px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-decoration-line: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-transform: uppercase;
+    transition-delay: 0s, 0s, 0s;
+    transition-duration: 0.2s, 0.2s, 0.2s;
+    transition-property: box-shadow, background-color, color;
+    transition-timing-function: cubic-bezier(0.4, 0, 1, 1), cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
+    vertical-align: middle;
+    width: 45px;
+    will-change: box-shadow;
+    word-spacing: 0px;
+    writing-mode: horizontal-tb
+}
+
+.itemInButton{
+    box-sizing: content-box;
+    color: rgb(41, 113, 173);
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Font Awesome 5 Pro";
+    font-feature-settings: normal;
+    font-kerning: auto;
+    font-optical-sizing: auto;
+    font-size: 22px;
+    font-size-adjust: none;
+    font-stretch: 100%;
+    font-style: normal;
+    font-variant-alternates: normal;
+    font-variant-caps: normal;
+    font-variant-east-asian: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-variant-position: normal;
+    font-variation-settings: normal;
+    font-weight: 400;
+    height: 25px;
+    letter-spacing: normal;
+    line-height: 18px;
+    text-align: center;
+    text-indent: 0px;
+    text-rendering: auto;
+    text-shadow: none;
+    text-transform: uppercase;
+    width: 20px;
+    word-spacing: 0px;
+    writing-mode: horizontal-tb;
+    -webkit-font-smoothing: antialiased;
+}
+
+.logoSpan{
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("https://root.nesa-sg.ch/_schulnetz_5.7.1/css/flat/customer/nesa_wappen.png");
+    background-origin: padding-box;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: no-repeat;
+    background-size: auto;
+    box-sizing: content-box;
+    color: rgb(255, 255, 255);
+    cursor: default;
+    display: inline-block;
+    font-family: Roboto, "Segoe UI", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    height: 60px;
+    line-height: 14px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    width: 45px;
+}
+
+.logoInSpan{
+    box-sizing: content-box;
+    color: rgb(255, 255, 255);
+    cursor: default;
+    display: inline;
+    font-family: Roboto, "Segoe UI", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    height: 60px;
+    line-height: 14px;
+    opacity: 0;
+    vertical-align: middle;
+    width: 60px;
+}
+
+.titleSpan{
+    background-color: rgb(50, 50, 50);
+    background-image: linear-gradient(90deg, rgb(238, 238, 238), rgb(41, 113, 173));
+    box-sizing: content-box;
+    color: rgb(0, 0, 0);
+    cursor: default;
+    display: block;
+    flex-shrink: 0;
+    font-family: Arial;
+    font-size: 40px;
+    font-weight: 500;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    width: 150px;
+}
+
+.navigationHeader{
+    align-items: center;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    flex-wrap: nowrap;
+    font-family: Roboto, "Segoe UI", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    height: 64px;
+    line-height: 14px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    width: 1084px
+}
+
+.startButton{
+    box-sizing: content-box;
+color: rgb(255, 255, 255);
+cursor: auto;
+display: block;
+font-family: Roboto, "Segoe UI", Arial, sans-serif;
+font-size: 14px;
+font-weight: 400;
+height: 35px;
+left: 0px;
+letter-spacing: normal;
+margin-bottom: 0px;
+margin-left: 0px;
+margin-right: 0px;
+margin-top: 12px;
+opacity: 0.87;
+outline-color: rgb(255, 255, 255);
+outline-style: none;
+outline-width: 0px;
+padding-bottom: 0px;
+padding-left: 16px;
+padding-right: 16px;
+padding-top: 0px;
+position: relative;
+text-align: center;
+text-decoration: none;
+text-decoration-line: none;
+white-space: nowrap;
+width: 25.34375px;
+}
+
+.mainLinkText{
+    box-sizing: content-box;
+color: rgb(255, 255, 255);
+cursor: auto;
+display: block;
+font-family: Roboto, "Segoe UI", Arial, sans-serif;
+font-size: 12px;
+font-weight: 500;
+height: 22px;
+letter-spacing: normal;
+line-height: 22px;
+outline-color: rgb(255, 255, 255);
+outline-style: none;
+outline-width: 0px;
+text-align: center;
+white-space: nowrap;
+width: 25.34375px;
+}
+
+.lol{
+    font-size: 1.33333em;
+line-height: .75em;
+vertical-align: -.0667em;
+width: 21.375px;
+}
+
+.notenButton{
+    box-sizing: content-box;
+    color: rgb(255, 255, 255);
+    cursor: auto;
+    display: block;
+    font-family: Roboto, "Segoe UI", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    height: 35px;
+    left: 0px;
+    letter-spacing: normal;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 12px;
+    opacity: 0.87;
+    outline-color: rgb(255, 255, 255);
+    outline-style: none;
+    outline-width: 0px;
+    padding-bottom: 0px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 0px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-decoration-line: none;
+    white-space: nowrap;
+    width: 32.34375px;
+}
+
+.absenzenButton{
+    box-sizing: content-box;
+    color: rgb(255, 255, 255);
+    cursor: auto;
+    display: block;
+    font-family: Roboto, "Segoe UI", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    height: 35px;
+    left: 0px;
+    letter-spacing: normal;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 12px;
+    opacity: 0.87;
+    outline-color: rgb(255, 255, 255);
+    outline-style: none;
+    outline-width: 0px;
+    padding-bottom: 0px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 0px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-decoration-line: none;
+    white-space: nowrap;
+    width: 55.34375px;
+}
+
+.agendaButton{
+    box-sizing: content-box;
+    color: rgb(255, 255, 255);
+    cursor: auto;
+    display: block;
+    font-family: Roboto, "Segoe UI", Arial, sans-serif;
+    font-size: 14px;    
+    font-weight: 400;
+    height: 35px;
+    left: 0px;
+    letter-spacing: normal;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 12px;
+    opacity: 0.87;
+    outline-color: rgb(255, 255, 255);
+    outline-style: none;
+    outline-width: 0px;
+    padding-bottom: 0px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 0px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-decoration-line: none;
+    white-space: nowrap;
+    width: 45.34375px;
+}
+
+.kommunikationButton{
+    box-sizing: content-box;
+    color: rgb(255, 255, 255);
+    cursor: auto;
+    display: block;
+    font-size: 14px;    
+    font-weight: 200;
+    height: 35px;
+    left: 0px;
+    letter-spacing: normal;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 12px;
+    opacity: 0.87;
+    outline-color: rgb(255, 255, 255);
+    outline-style: none;
+    outline-width: 0px;
+    padding-bottom: 0px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 0px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-decoration-line: none;
+    white-space: nowrap;
+    width: 78.34375px;
+}
+
+.DokuButton{
+    box-sizing: content-box;
+    color: rgb(255, 255, 255);
+    cursor: auto;
+    display: block;
+    font-size: 14px;    
+    font-weight: 200;
+    height: 35px;
+    left: 0px;
+    letter-spacing: normal;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 12px;
+    opacity: 0.87;
+    outline-color: rgb(255, 255, 255);
+    outline-style: none;
+    outline-width: 0px;
+    padding-bottom: 0px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 0px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-decoration-line: none;
+    white-space: nowrap;
+    width: 95.34375px;
+}
+
+.eSchoolButton{
+    box-sizing: content-box;
+    color: rgb(255, 255, 255);
+    cursor: auto;
+    display: block;
+    font-size: 14px;    
+    font-weight: 200;
+    height: 35px;
+    left: 0px;
+    letter-spacing: normal;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 12px;
+    opacity: 0.87;
+    outline-color: rgb(255, 255, 255);
+    outline-style: none;
+    outline-width: 0px;
+    padding-bottom: 0px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 0px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-decoration-line: none;
+    white-space: nowrap;
+    width: 43.34375px;
+}
+
+.bellButton{
+    border-radius: 50%;
+    font-size: 24px;
+    height: 32px;
+    margin-left: 0;
+    margin-right: 0;
+    min-width: 32px;
+    width: 32px;
+    padding: 0;
+    overflow: hidden;
+    color: inherit;
+    line-height: normal;
+    background: 0 0;
+    border: none;
+    margin: 0;
+}
+
+.timeholder{
+    position: relative;
+    float: left;
+    margin: 0 5px;
+    flex-shrink: 0;
+    box-sizing: content-box;
+    height: 24px;
+    width: 24px;
+}
+
+.bookmarkbutton{
+    border-radius: 50%;
+    font-size: 24px;
+    height: 32px;
+    margin-left: 0;
+    margin-right: 0;
+    min-width: 32px;
+    width: 32px;
+    padding: 0;
+    overflow: hidden;
+    color: inherit;
+    line-height: normal;
+    background: 0 0;
+    border: none;
+    margin: 0;
+}
+
+.Menubutton{
+    border-radius: 50%;
+    font-size: 24px;
+    height: 32px;
+    margin-left: 0;
+    margin-right: 0;
+    min-width: 32px;
+    width: 32px;
+    padding: 0;
+    overflow: hidden;
+    color: inherit;
+    line-height: normal;
+    background: 0 0;
+    border: none;
+    margin: 0;
+}
+

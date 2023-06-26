@@ -13,7 +13,17 @@ const Login = () => {
   const [loggedIn, setLoggedIn] = useState(false);
 
   useEffect(() => {
-    document.title = "Nesa BWZR"; // Replace with your desired title
+    document.title = "Nesa BWZR"; 
+  }, []);
+
+  useEffect(() => {
+    // Apply the desired background class
+    document.body.classList.add('body-login'); 
+
+    return () => {
+      // Clean up the body class when the component unmounts
+      document.body.classList.remove('body-login');
+    };
   }, []);
 
   useEffect(() => {

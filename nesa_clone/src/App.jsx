@@ -13,6 +13,7 @@ function App() {
       <BrowserRouter> 
         <Routes>  
               <Route path='/Home' element={<Home />}/>
+              <Route exact path="/" element={<Navigate to="/Login"/>} />
               <Route path="/Login" element={<Login/>}/>
         </Routes>
       </BrowserRouter>
