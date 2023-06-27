@@ -578,3 +578,6 @@ width: 21.375px;
     margin: 0;
 }
 
+a:hover{
+    color: inherit !important;
+}
